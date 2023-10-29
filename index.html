@@ -47,8 +47,10 @@
           id="urlInput">
       </div>
       <div class="button-container flex flex-col gap-3 mt-6 z-99999">
-        <button id="psychometricButton" class="custom-button outline-none z-99999">Click here to go to psychometric
-          test</button>
+        <button id="psychometricButton" class="custom-button outline-none z-99999" onclick="redirectToPsychometricTest()">
+          Click here to go to psychometric
+          test
+        </button>
         <button id = "challengesButton" class="custom-button mt-2 z-99999">Click here to go to challenges</button>
       </div>
     </div>
@@ -170,6 +172,13 @@
       retina_detect: true
     });
   </script>
+  <script>
+    function redirectToPsychometricTest() {
+        // Redirect to the Psychometric Test page
+        window.location.href = "https://www.psychometricinstitute.co.uk/Free-Personality-Test.asp";
+    }
+</script>
+
 </body>
 
 </html>
